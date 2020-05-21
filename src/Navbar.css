@@ -1,0 +1,51 @@
+.navbar {
+    /* flex-direction: row; */
+    background-color: rgb(91, 185, 3);
+}
+
+#logo {
+    /* max-height: 35%; */
+    max-width: 35%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-brand {
+    padding: 0px;
+    /* display: inline-block; */
+    /* float: left; */
+}
+
+/* 
+af {
+    font-weight: bold;
+    overflow: hidden;
+    padding: 1.5vh 1.8vw 1.5vh 0vw;
+    float: right;
+    text-align: center;
+    background-color: red;
+}
+
+a:hover {
+    background-color: blue;
+} */
+
+/* .nav>li {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    color: white;
+} */
+
+.navbar-nav {
+    flex-direction: row;
+    float: right;
+    /* display: inline-block; */
+}
+
+.nav-item {
+    /* display: inline-block; */
+    /* background-color: black; */
+    margin: 5px;
+}

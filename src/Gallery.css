@@ -1,0 +1,59 @@
+iframe {
+    width: 25vw;
+    height: 30vh;
+}
+
+.slide-container {
+    width: 65vw;
+    /* max-height: 50vh; */
+    margin: auto; 
+}
+  
+h3 {
+    text-align: center;
+}
+
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 70vh;
+    /* width: 65vw; */
+    background-size: 100% 100%;
+}
+
+.each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+}
+
+
+.col-md-4 {
+    padding-bottom: 50px;
+}
+
+.row img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    margin: 5px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.active, .btn:hover {
+    background-color: red;
+}
+
+.container {
+    width: 100%;
+}
