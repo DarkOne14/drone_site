@@ -33,6 +33,7 @@ h3 {
 
 .col-md-4 {
     padding-bottom: 50px;
+    /* max-width: 100%; */
 }
 
 .row img {
@@ -54,6 +55,6 @@ h3 {
     background-color: red;
 }
 
-.container {
+/* .container {
     width: 100%;
-}
+} */

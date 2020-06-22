@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
 // import { ImageBackground, Text } from 'react-native';
-// import bigpic from '/images/golf1_resized.jpg';
 
 function Home(){
 
