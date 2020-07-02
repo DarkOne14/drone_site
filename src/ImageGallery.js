@@ -15,10 +15,60 @@ const imageSources = [
     '/images/golfclub0.jpg',
     '/images/house0.jpg',
     '/images/house1.jpg',
+    '/images/AA3.jpg',
 ];
+
+var drew_index = 0;
 
 function doSomething(e) {
     console.log("Something was done to pic id " + e.target.id);
+    drew_index = e.target.id;
+    console.log("drew index is now " + drew_index);
+    // this.slideRef.goTo(drew_index);
+}
+
+function setIndex(e) {
+    drew_index = e.target.id;
+    console.log("i am making the index " + e.target.id);
+}
+
+const properties = {
+    // duration: 5000,
+    transitionDuration: 500,
+    infinite: true,
+    indicators: true,
+    arrows: true,
+    pauseOnHover: true,
+    autoplay: false,
+    defaultIndex: {drew_index},
+    // defaultIndex: drew_index,
+    // defaultIndex: newIndex,
+    
+    onChange: (oldIndex, newIndex) => {
+        console.log('slide transition from ' + oldIndex + ' to ' + newIndex);
+        // drew_index = newIndex;
+        console.log('drew index after transition is now ' + drew_index);
+
+    }
+}
+
+function Slideshow() {
+
+    let content = [];
+    for (var i = 0; i < imageSources.length; i++) {
+        content.push(
+            <div className="each-slide">
+                <div style={{ backgroundImage: `url(${imageSources[i]})`}} />
+          </div>
+        );
+    }
+    return (
+        <div className="slide-container">
+            <Slide {...properties} defaultIndex={drew_index}>
+                {content}
+            </Slide>
+        </div>
+    );
 }
 
 
@@ -28,7 +78,7 @@ function generateIGallery() {
     for (var i = 0; i < imageSources.length; i++) {
         content.push(
             <div class="col-md-4">
-                <img src={imageSources[i]} id={i} class="img-fluid w-100" onClick={e => doSomething(e)}/>
+                <img src={imageSources[i]} id={i} class="img-fluid w-100 galleryImage" onClick={e => doSomething(e)}/>
             </div>
         );
         if (content.length === 3) {
@@ -49,7 +99,14 @@ function generateIGallery() {
 
 function ImageGallery() {
     return (
-        generateIGallery()
+        <div>
+            <h1>Photo Gallery</h1>
+            <Popup modal trigger={generateIGallery()} onOpen={e => setIndex(e)}>
+                {Slideshow()}
+            </Popup>
+            {/* <span>{generateIGallery()}</span> */}
+        </div>
+       
     )
 }
 

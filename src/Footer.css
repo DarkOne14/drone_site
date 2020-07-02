@@ -1,12 +1,10 @@
-.container-fluid {
-    width: 100%;
-}
-
-#foot {
+.footer {
     background-color: rgb(0, 170, 170);
+    /* justify-content: center; */
+    /* float: left; */
 }
 
-.row img {
+#cert {
     width: 40%;
     height: 100%;
 }

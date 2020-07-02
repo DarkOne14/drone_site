@@ -28,7 +28,7 @@ function generateVGallery() {
         }
     }
     if (content.length !== 0) {
-        rows.push(<div class="row">{content}</div>);
+        rows.push(<div class="row" style={{justifyContent: "center"}}>{content}</div>);
     }
 
     return (
@@ -40,7 +40,11 @@ function generateVGallery() {
 
 function VideoGallery() {
     return (
-        generateVGallery()
+        <div>
+            <h1>Video Gallery</h1>
+            <span>{generateVGallery()}</span>
+        </div>
+        
     );
 }
 

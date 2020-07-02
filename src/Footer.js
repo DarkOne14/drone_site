@@ -3,10 +3,10 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div class="footer">
-            <div class="container-fluid" id="foot">
-                <div class="row">
-                    <div class="col-sm-6">
+        <div>
+            <div class="container-fluid footer">
+                <div class="row w-100">
+                    <div class="col-sm-6 my-auto">
                         <img src="/images/drone_cert.png" id="cert" />
                     </div>
                     <div class="col-sm-6 my-auto">
