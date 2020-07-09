@@ -16,6 +16,9 @@ const imageSources = [
     '/images/house0.jpg',
     '/images/house1.jpg',
     '/images/AA3.jpg',
+    '/images/AA4.jpg',
+    '/images/AA5.jpg',
+    '/images/AA6.jpg',
 ];
 
 var drew_index = 0;
