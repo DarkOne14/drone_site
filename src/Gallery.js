@@ -94,7 +94,7 @@ function photoGallery() {
     for (var i = 0; i < imageSources.length; i++) {
         content.push(
             <div class="col-md-4">
-                <img src={imageSources[i]} id={i} onClick={e => doSomething(e)}/>
+                <img src={imageSources[i]} id={i} class="img-fluid w-100" onClick={e => doSomething(e)}/>
             </div>
         );
         if (content.length === 3) {
@@ -168,7 +168,7 @@ function videoGallery() {
 
 function Gallery(){
 
-    const [content, setContent] = useState('videos');
+    const [content, setContent] = useState('photos');
     let stuff;
     if (content === 'photos') {
         stuff = photoGallery();
@@ -185,8 +185,8 @@ function Gallery(){
             <button className={'btn ' + (content === 'videos' ? 'active' : '')} id="videoBtn" onClick={() => setContent('videos')}>
                 Videos
             </button>
-            {stuff}
-            <Popup modal trigger={<button>Click me!</button>}>
+            {/* {stuff} */}
+            <Popup modal trigger={stuff}>
                 {Slideshow()}
             </Popup>
             {/* {Slideshow()} */}

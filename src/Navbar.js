@@ -1,23 +1,51 @@
 import React, { useState } from 'react';
+import globalHook from 'use-global-hook';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 
 
+// const [selected, setSelected] = useState('Home');
+const initialState = {
+    currentPage: 'Home',
+    currentBg: 'none',
+    currentPos: 'absolute',
+};
+
+const actions = {
+    setPage: (store, input) => {
+        store.setState({ currentPage: input });
+    },
+    setBg: (store, inputBg) => {
+        store.setState({ currentBg: inputBg });
+    },
+    setPos: (store, inputPos) => {
+        store.setState({ currentPos: inputPos });
+    }
+};
+
+const useGlobal = globalHook(React, initialState, actions);
 
 function NavBar() {
 
-    const [selected, setSelected] = useState('Home');
+    const [pageState, pageActions] = useGlobal();
 
     return (
-        <nav class="navbar sticky-top navbar-expand-sm" >
+        // removed sticky-top , nabbar-fixed-top
+        <nav class="navbar navbar-expand-sm" style={{background: pageState.currentBg, position: pageState.currentPos}}>
             <a class="navbar-brand">
-                <img src="/HigherResolutionLogo.png" id="logo"/>
+                <Link to="/"><img src="/HigherResolutionLogo.png" id="logo" onClick={() => {pageActions.setPage('Home'); pageActions.setBg('none'); pageActions.setPos('absolute');} }></img></Link>
             </a>
             <ul class="navbar-nav ml-auto">
-                <li className={"nav-item " + (selected == 'Home' ? 'active' : '')}><a onClick={() => setSelected('Home')}><Link to="/">Home</Link></a></li>
-                <li class={"nav-item " + (selected == 'Gallery' ? 'active' : '')}><a onClick={() => setSelected('Gallery')}><Link to="/gallery">Gallery</Link></a></li>
-                <li class={"nav-item " + (selected == 'WhatWeDo' ? 'active' : '')}><a onClick={() => setSelected('WhatWeDo')}><Link to="/what-we-do">What We Do</Link></a></li>
-                <li class={"nav-item " + (selected == 'Contact' ? 'active' : '')}><a onClick={() => setSelected('Contact')}><Link to="/contact">Contact Us</Link></a></li>
+                <li className={"nav-item " + (pageState.currentPage == 'Home' ? 'active' : '')}><a onClick={() => {pageActions.setPage('Home'); pageActions.setBg('none'); pageActions.setPos('absolute');} }><Link to="/">Home</Link></a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class={"dropdown-toggle " + (pageState.currentPage == 'Gallery' ? 'active' : '')}>Gallery<b class="caret"></b></a>
+                    <ul class="dropdown-content">
+                        <a href="#" onClick={() => {pageActions.setPage('Gallery'); pageActions.setBg('rgb(0,0,120'); pageActions.setPos('relative') } }><Link to="/photos">Photos</Link></a>
+                        <a href="#" onClick={() => {pageActions.setPage('Gallery'); pageActions.setBg('rgb(0,0,120'); pageActions.setPos('relative') } }><Link to="/videos">Videos</Link></a>
+                    </ul>
+                </li>
+                <li class={"nav-item " + (pageState.currentPage == 'WhatWeDo' ? 'active' : '')}><a onClick={() => {pageActions.setPage('WhatWeDo'); pageActions.setBg('rgb(0,0,120'); pageActions.setPos('relative') } }><Link to="/what-we-do">What We Do</Link></a></li>
+                <li class={"nav-item " + (pageState.currentPage == 'Contact' ? 'active' : '')}><a onClick={() => {pageActions.setPage('Contact'); pageActions.setBg('rgb(0,0,120'); pageActions.setPos('relative') } }><Link to="/contact">Contact Us</Link></a></li>
             </ul> 
                  
         </nav>
