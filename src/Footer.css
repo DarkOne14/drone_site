@@ -1,0 +1,10 @@
+.footer {
+    background-color: rgb(0, 170, 170);
+    /* justify-content: center; */
+    /* float: left; */
+}
+
+#cert {
+    width: 40%;
+    height: 100%;
+}
