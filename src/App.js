@@ -7,8 +7,8 @@ import Contact from './Contact';
 import WhatWeDo from './WhatWeDo';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import ImageGallery from './ImageGallery'
-import VideoGallery from './VideoGallery'
+import ImageGallery from './ImageGallery';
+import VideoGallery from './VideoGallery';
 import {Route, Link} from 'react-router-dom';
 
 function App() {
@@ -25,5 +25,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

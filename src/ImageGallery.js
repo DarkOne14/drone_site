@@ -5,6 +5,9 @@ import Content from './Content.js';
 import './Gallery.css';
 
 const imageSources = [
+    '/images/AA4.jpg',
+    '/images/AA5.jpg',
+    '/images/AA6.jpg',
     '/images/AA0.jpg',
     '/images/AA1.jpg',
     '/images/AA2.jpg',
@@ -16,9 +19,6 @@ const imageSources = [
     '/images/house0.jpg',
     '/images/house1.jpg',
     '/images/AA3.jpg',
-    '/images/AA4.jpg',
-    '/images/AA5.jpg',
-    '/images/AA6.jpg',
 ];
 
 var drew_index = 0;
