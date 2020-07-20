@@ -1,14 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
+import globalHook from 'use-global-hook';
+import CrossfadeImage from 'react-crossfade-image';
+
+
 // import { ImageBackground, Text } from 'react-native';
 
+const imageSources = [
+    '/images/home_page/home0.jpg',
+    '/images/home_page/home1.jpg',
+    '/images/home_page/home2.jpg',
+    '/images/home_page/home3.jpg',
+    '/images/home_page/home4.jpg',
+    '/images/home_page/home5.jpg',
+];
+
+// const initState = {
+//     index: 0,
+// };
+
+// const actions = {
+//     setIndex: (store, input) => {
+//         store.setState({ index: (this.index + 1) % imageSources.length});
+//     }
+// };
+
+
+// const useGlobal = globalHook(React, initState, actions);
+
+
+// setInterval(() => {
+//     // imageActions.setIndex();
+//     temp = (temp + 1) % imageSources.length;
+//     console.log(temp);
+// }, 1000);
+
 function Home(){
+
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setIndex(index => index + 1);
+      }, 4000);
+      return () => clearInterval(interval);
+    }, []);
+
+    // function swapPic() {
+    //     setIndex((imageIndex+ 1) % imageSources.length);
+    // }
+
+    // setInterval(swapPic(), 1000);
+
     return(
         <div>
+            
             <div class="imageTextBox">
-                <img src='/images/golf1_resized.jpg' class="zoom" alt="drone golf view" />
+                <CrossfadeImage src={imageSources[index%imageSources.length]} duration={4000} />    
                 <div id="smallerText">Higher Resolution LLC</div>
-                <div id="bannerText">Highest Quality Aerial Photography Done Your Way</div> 
+                <div id="bannerText">Highest Quality<br /> Aerial Photography Done Your Way</div>   
             </div>
             <h1>Aerial Photography for You</h1>
             <div>

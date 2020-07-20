@@ -5,6 +5,11 @@ import './WhatWeDo.css'
 function WhatWeDo() {
     return(
         <div>
+            <div class="topPhoto">
+            
+                <img src={"/images/boat1.jpg"} />
+                <div id="photoText">What We Do</div>
+            </div>
             <div class="container">
                 <div class="wwd">
                     <h1>What we do</h1>

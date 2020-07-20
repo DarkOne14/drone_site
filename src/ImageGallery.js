@@ -8,14 +8,17 @@ const imageSources = [
     '/images/AA4.jpg',
     '/images/AA5.jpg',
     '/images/AA6.jpg',
+    '/images/north0.jpg',
+    '/images/north1.jpg',
+    '/images/north2.jpg',
+    '/images/golf0.jpg',
+    '/images/golf1.jpg',
+    '/images/golfclub0.jpg',
     '/images/AA0.jpg',
     '/images/AA1.jpg',
     '/images/AA2.jpg',
     '/images/beach0.jpg',
     '/images/cactus0.jpg',
-    '/images/golf0.jpg',
-    '/images/golf1.jpg',
-    '/images/golfclub0.jpg',
     '/images/house0.jpg',
     '/images/house1.jpg',
     '/images/AA3.jpg',
@@ -35,7 +38,7 @@ function setIndex(e) {
     console.log("i am making the index " + e.target.id);
 }
 
-const properties = {
+let properties = {
     // duration: 5000,
     transitionDuration: 500,
     infinite: true,
