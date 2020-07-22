@@ -74,7 +74,7 @@ function Home(){
             <div class="middle">
                 <div class="section">
                     <h1 class="largeText" style={{float: "left"}}>Your Project Done Your Way</h1>
-                    <p>
+                    <p class="paragraph">
                         If you are looking for your affordable solution to aerial photography, Higher Resolution LLC is your answer.
                         We've got experience in many different fields from real estate to beach coasts, golf courses to sporting events,
                         we can help you with whatever you need.
@@ -83,7 +83,7 @@ function Home(){
                 </div>
                 <div class="section">
                     <h1 class="largeText" style={{float: "right"}}>The Highest Quality. The Lowest Prices.</h1>
-                    <p>
+                    <p class="paragraph">
                         The best and most relevant form of drone media today is professional high definition 4K video.
                         As you have likely seen and experienced, a professional looking video, when paired with the right music
                         and properly edited, can leave a lasting impression.
@@ -93,7 +93,7 @@ function Home(){
                 </div>
                 <div class="section">
                     <h1 class="largeText" style={{float: "left"}}>We Give You More For The Cost Of Less</h1>
-                    <p>
+                    <p class="paragraph">
                         That is why we offer a surplus of 12 MP photographs from each direction. Every ideal angle will be captured,
                         and each photo would give you and all those who view them a new and unique view unparalleled to any they have
                         ever seen before.

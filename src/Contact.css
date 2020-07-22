@@ -1,0 +1,22 @@
+#selfPortrait {
+    width: 20vw;
+    min-width: 140px;
+    max-height: 50vh;
+}
+
+.halfWidth {
+    width: 40%;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+#contact-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#info {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.75em;
+}

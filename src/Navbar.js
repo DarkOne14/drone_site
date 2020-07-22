@@ -31,7 +31,7 @@ function NavBar() {
 
     return (
         // removed sticky-top , nabbar-fixed-top
-        <nav class="navbar navbar-expand-sm" style={{background: pageState.currentBg, position: pageState.currentPos}}>
+        <nav class="navbar navbar-expand-md" style={{background: pageState.currentBg, position: pageState.currentPos}}>
             <a class="navbar-brand">
                 <Link to="/"><img src="/HigherResolutionLogo.png" id="logo" onClick={() => {pageActions.setPage('Home'); pageActions.setBg('none'); pageActions.setPos('absolute');} }></img></Link>
             </a>

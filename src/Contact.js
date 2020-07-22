@@ -1,29 +1,33 @@
-import React from 'react';
+import React from 'react'
+
+import './SimplePage.css';
+import './Contact.css'
 
 function Contact(){
     return(
         <div>
-            <h1>call me beep me if you wanna reach me</h1>
-            <form action="mailto:eyeintheskydh@gmail.com" method="POST" encType="multipart/form-data"
-            name="emailForm">
-                Name:
-                <input type="text" size="24" name="formName"/>
-            </form>
-            {/* <form action=”mailto:contact@yourdomain.com”
-
-method=”POST”
-
-enctype=”multipart/form-data”
-
-name=”EmailTestForm”>
-
-Name:<br>
-
-<input type=”text” size=”24″ name=”VisitorName”><br><br>
-
-Message:<br> <textarea name=”VisitorComment” rows=”4″ cols=”20″>
-
-</textarea><br><br> <input type=”submit” value=”Submit”> </form> */}
+            <div class="topPhoto">
+                <img src="/images/AA7.jpg" />
+                <div id="photoText">Contact Us</div>
+            </div>
+            <div class="container" id="contact-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/images/portrait.jpeg" id="selfPortrait" />
+                    </div>
+                    <div class="col-md-8 my-auto" id="info">
+                        <p>Looking for a quote?<br />
+                        Want to see more of our work?<br />
+                        Have any questions?</p>
+                        <p>Reach out to us and we will get right back to you!</p>
+                        <hr class="halfWidth" />
+                        <p><b>owner: </b>Drew Hirselj</p>
+                        <p><b>email: </b>eyeintheskydh@gmail.com</p>
+                        <p><b>phone: </b>(734) 985-3130</p>
+                        <p><b>Ann Arbor, MI</b></p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

@@ -1,12 +1,11 @@
 import React from 'react'
 
-import './WhatWeDo.css'
+import './SimplePage.css'
 
 function WhatWeDo() {
     return(
         <div>
             <div class="topPhoto">
-            
                 <img src={"/images/boat1.jpg"} />
                 <div id="photoText">What We Do</div>
             </div>

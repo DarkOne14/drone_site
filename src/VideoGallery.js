@@ -42,7 +42,8 @@ function VideoGallery() {
     return (
         <div>
             <h1>Video Gallery</h1>
-            <span>{generateVGallery()}</span>
+            {/* <span>{generateVGallery()}</span> */}
+            {generateVGallery()}
         </div>
         
     );

@@ -4,14 +4,16 @@
     /* background: none; */
     /* position: absolute; */
     position: absolute;
+    /* flex-direction: row; */
     top: 0;
     z-index: 5;
     min-height: 7vh;
-    /* height: 7vh; */
+    /* white-space: nowrap; */
     width: 100%;
     /* min-width: 600px; */
-
 }
+
+
 
 #logo {
     /* max-height: 35%; */
@@ -26,9 +28,21 @@
     flex-direction: row;
     float: right;
     font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
-    font-size: 21px;
+    /* font-size: 21px; */
     color: black;
     /* display: inline-block; */
+}
+
+@media screen and (max-width: 1600px) and (min-width: 801px) {
+    .navbar-nav {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-nav {
+        font-size: 3vw;
+    }
 }
 
 .nav-item {

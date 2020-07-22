@@ -4,15 +4,6 @@
     min-height: 450px;
     overflow: hidden;
     user-select: none;
-
-    /* display: inline-block; */
-/* 
-    display: flex;
-    align-items: center; */
-    /* justify-content: center; */
-
-    /* vertical-align: middle; */
-    /* text-emphasis: bold; */
 }
 
 .imageTextBox img {
@@ -23,19 +14,7 @@
     /* transition: transform 1.5s ease; */
     /* text-align: center; */
     /* transform: translateY(-20%); */
-
-
-    /* animation-name: fadeOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s; */
 }
-
-
-/* .imageTextBox:hover img {
-    transform: scale(1.2);
-} */
-
 
 @media screen and (min-width: 1601px) {
     #bannerText {
@@ -63,38 +42,22 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* font-size: 2vw; */
     font-style: italic;
     font-family: 'Cambria';
     color: white;
-    /* padding-bottom: 100px; */
 }
 
 #bannerText {
     position: absolute;
-    /* display: inline-block; */
     width: 60%;
-    /* text-align: center; */
-    /* left: 50%; */
     top: 40%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    
-    /* height: 99vh; */
-    /* margin-top: -44.5vh; */
-    /* vertical-align: middle; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* z-index: 1; */
     font-family: 'Arial', 'Times New Roman','Verdana';
     text-transform: uppercase;
     letter-spacing: 0.01em;
     line-height: 1.1em;
-     /* 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
-    /* font-size: 4vw;  */
     color: white;
 }
 
@@ -109,8 +72,6 @@ h2 span {
 }
 
 .middle {
-    /* margin-left: 10px;
-    margin-right: 10px; */
     margin: auto;
     width: 50%;
 }
@@ -125,4 +86,8 @@ h2 span {
     width: 50%;
     font-family: 'Droid Serif', 'Times New Roman', Times, sans-serif;
     font-size: 30px;
+}
+
+.paragraph {
+    line-height: 1.75em;
 }

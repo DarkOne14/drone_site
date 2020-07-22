@@ -5,11 +5,11 @@ function Footer() {
     return (
         <div>
             <div class="container-fluid footer">
-                <div class="row w-100">
-                    <div class="col-sm-6 my-auto">
+                <div class="row justify-content-around">
+                    <div class="col-sm-4 my-auto">
                         <img src="/images/drone_cert.png" id="cert" />
                     </div>
-                    <div class="col-sm-6 my-auto">
+                    <div class="col-sm-4 my-auto">
                         <p>Ann Arbor, MI 48104<br/>email: eyeintheskydh@gmail.com<br/>phone: (734) 985-3130</p>
                     </div>
                 </div>             
