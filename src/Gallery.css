@@ -31,10 +31,9 @@ h3 {
 }
 
 
-.col-md-4 {
+.imageColumn {
     padding-bottom: 50px;
-    /* max-width: 100%; */
-}
+}    
 
 /* .row img { */
 .galleryImage {
@@ -52,10 +51,24 @@ h3 {
     cursor: pointer;
 }
 
-/* .active, .btn:hover {
-    background-color: blue;
+/* #cam, #vid {
+    font-size: 40px;
 } */
 
-/* .container {
-    width: 100%;
-} */
+@media screen and (max-width: 800px) {
+    #cam, #vid {
+        font-size: 2.5vw;
+    }
+    #des {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 801px) {
+    #cam, #vid {
+        font-size: 15px;
+    }
+    #des {
+        font-size: 20px;
+    }
+}

@@ -83,7 +83,7 @@ function generateIGallery() {
     let content = [];
     for (var i = 0; i < imageSources.length; i++) {
         content.push(
-            <div class="col-md-4">
+            <div class="col-md-4 imageColumn">
                 <img src={imageSources[i]} id={i} class="img-fluid w-100 galleryImage" onClick={e => doSomething(e)}/>
             </div>
         );
@@ -106,7 +106,21 @@ function generateIGallery() {
 function ImageGallery() {
     return (
         <div>
-            <h1>Photo Gallery</h1>
+            <div class="container">
+                <div class="row">       
+                    <div class="col-sm-4 my-auto" id="cam">
+                        12MP Camera
+                    </div>
+                    <div class="col-md-4 my-autos" id="des">
+                        Our company works to produce professional level aerial imaging,
+                            which is why our drones are equipped with a 12MP
+                            camera and 4K video capabilities to highlight in every pixel.
+                    </div>
+                    <div class="col-sm-4 my-auto" id="vid">
+                        4K Video
+                    </div>
+                </div>
+            </div>
             <Popup modal trigger={generateIGallery()} onOpen={e => setIndex(e)}>
                 {Slideshow()}
             </Popup>
