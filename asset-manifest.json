@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/drone_site/static/css/main.63af8fe2.chunk.css",
+    "main.js": "/drone_site/static/js/main.b723c4fe.chunk.js",
+    "main.js.map": "/drone_site/static/js/main.b723c4fe.chunk.js.map",
+    "runtime-main.js": "/drone_site/static/js/runtime-main.acb6eca0.js",
+    "runtime-main.js.map": "/drone_site/static/js/runtime-main.acb6eca0.js.map",
+    "static/css/2.f936e03a.chunk.css": "/drone_site/static/css/2.f936e03a.chunk.css",
+    "static/js/2.fb82cc73.chunk.js": "/drone_site/static/js/2.fb82cc73.chunk.js",
+    "static/js/2.fb82cc73.chunk.js.map": "/drone_site/static/js/2.fb82cc73.chunk.js.map",
+    "index.html": "/drone_site/index.html",
+    "precache-manifest.1e96b51b1c29d02afc276890a012a63b.js": "/drone_site/precache-manifest.1e96b51b1c29d02afc276890a012a63b.js",
+    "service-worker.js": "/drone_site/service-worker.js",
+    "static/css/2.f936e03a.chunk.css.map": "/drone_site/static/css/2.f936e03a.chunk.css.map",
+    "static/css/main.63af8fe2.chunk.css.map": "/drone_site/static/css/main.63af8fe2.chunk.css.map",
+    "static/js/2.fb82cc73.chunk.js.LICENSE.txt": "/drone_site/static/js/2.fb82cc73.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/drone_site/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acb6eca0.js",
+    "static/css/2.f936e03a.chunk.css",
+    "static/js/2.fb82cc73.chunk.js",
+    "static/css/main.63af8fe2.chunk.css",
+    "static/js/main.b723c4fe.chunk.js"
+  ]
+}
