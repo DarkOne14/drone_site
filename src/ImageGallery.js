@@ -1,7 +1,8 @@
-import React from 'react';
-import { Slide } from 'react-slideshow-image';
+import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import Content from './Content.js';
+import SimpleReactLightbox from 'simple-react-lightbox';
+import { SRLWrapper } from 'simple-react-lightbox';
 import './Gallery.css';
 
 const imageSources = [
@@ -24,59 +25,18 @@ const imageSources = [
     '/images/AA3.jpg',
 ];
 
-var drew_index = 0;
-
-function doSomething(e) {
-    console.log("Something was done to pic id " + e.target.id);
-    drew_index = e.target.id;
-    console.log("drew index is now " + drew_index);
-    // this.slideRef.goTo(drew_index);
-}
-
-function setIndex(e) {
-    drew_index = e.target.id;
-    console.log("i am making the index " + e.target.id);
-}
-
-let properties = {
-    // duration: 5000,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    arrows: true,
-    pauseOnHover: true,
-    autoplay: false,
-    defaultIndex: {drew_index},
-    // defaultIndex: drew_index,
-    // defaultIndex: newIndex,
-    
-    onChange: (oldIndex, newIndex) => {
-        console.log('slide transition from ' + oldIndex + ' to ' + newIndex);
-        // drew_index = newIndex;
-        console.log('drew index after transition is now ' + drew_index);
-
+const options = {
+    settings: {
+        lightboxTransitionSpeed: 0.2,
+        lightboxTransitionTimingFunction: "easeIn",
+    },
+    buttons: {
+        showDownloadButton: false,
+    },
+    thumbnails: {
+        showThumbnails: true,
     }
 }
-
-function Slideshow() {
-
-    let content = [];
-    for (var i = 0; i < imageSources.length; i++) {
-        content.push(
-            <div className="each-slide">
-                <div style={{ backgroundImage: `url(${imageSources[i]})`}} />
-          </div>
-        );
-    }
-    return (
-        <div className="slide-container">
-            <Slide {...properties} defaultIndex={drew_index}>
-                {content}
-            </Slide>
-        </div>
-    );
-}
-
 
 function generateIGallery() {
     let rows = [];
@@ -84,7 +44,7 @@ function generateIGallery() {
     for (var i = 0; i < imageSources.length; i++) {
         content.push(
             <div class="col-md-4 imageColumn">
-                <img src={imageSources[i]} id={i} class="img-fluid w-100 galleryImage" onClick={e => doSomething(e)}/>
+                <img src={imageSources[i]} id={i} class="img-fluid w-100 galleryImage"/>
             </div>
         );
         if (content.length === 3) {
@@ -106,27 +66,29 @@ function generateIGallery() {
 function ImageGallery() {
     return (
         <div>
-            <div class="container">
-                <div class="row">       
-                    <div class="col-sm-4 my-auto" id="cam">
-                        12MP Camera
-                    </div>
-                    <div class="col-md-4 my-autos" id="des">
-                        Our company works to produce professional level aerial imaging,
-                            which is why our drones are equipped with a 12MP
-                            camera and 4K video capabilities to highlight in every pixel.
-                    </div>
-                    <div class="col-sm-4 my-auto" id="vid">
-                        4K Video
+            <SimpleReactLightbox>
+                <div class="container">
+                    <div class="row">       
+                        <div class="col-sm-6 my-auto" id="cam">
+                            12MP Camera
+                        </div>
+                        {/* <div class="col-md-4 my-autos" id="des">
+                            Our company works to produce professional level aerial imaging,
+                                which is why our drones are equipped with a 12MP
+                                camera and 4K video capabilities to highlight in every pixel.
+                        </div> */}
+                        <div class="col-sm-6 my-auto" id="vid">
+                            4K Video
+                        </div>
                     </div>
                 </div>
-            </div>
-            <Popup modal trigger={generateIGallery()} onOpen={e => setIndex(e)}>
-                {Slideshow()}
-            </Popup>
-            {/* <span>{generateIGallery()}</span> */}
-        </div>
-       
+                <SRLWrapper options={options}>
+                    {generateIGallery()}
+                </SRLWrapper>
+                {/* {generateIGallery()} */}
+                
+            </SimpleReactLightbox>
+        </div>       
     )
 }
 

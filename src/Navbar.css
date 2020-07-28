@@ -60,6 +60,10 @@
     font-weight: bold;
 }
 
+.nav-item a:hover {
+    color: rgb(255, 203, 5);
+}
+
 
 
 /* ------ */
