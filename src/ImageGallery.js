@@ -44,7 +44,7 @@ function generateIGallery() {
     for (var i = 0; i < imageSources.length; i++) {
         content.push(
             <div class="col-md-4 imageColumn">
-                <img src={imageSources[i]} id={i} class="img-fluid w-100 galleryImage"/>
+                <img src={process.env.PUBLIC_URL + imageSources[i]} id={i} class="img-fluid w-100 galleryImage"/>
             </div>
         );
         if (content.length === 3) {

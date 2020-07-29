@@ -56,7 +56,7 @@ function Home(){
         <div>
             
             <div class="imageTextBox">
-                <CrossfadeImage src={imageSources[index%imageSources.length]} duration={4000} />    
+                <CrossfadeImage src={process.env.PUBLIC_URL + imageSources[index%imageSources.length]} duration={4000} />    
                 <div id="smallerText">Higher Resolution LLC</div>
                 <div id="bannerText">Highest Quality<br /> Aerial Photography Done Your Way</div>   
             </div>

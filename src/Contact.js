@@ -7,13 +7,13 @@ function Contact(){
     return(
         <div>
             <div class="topPhoto">
-                <img src="/images/AA7.jpg" />
+                <img src={process.env.PUBLIC_URL + "/images/AA7.jpg"} />
                 <div id="photoText">Contact Us</div>
             </div>
             <div class="container" id="contact-container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="/images/portrait.jpeg" id="selfPortrait" />
+                        <img src={process.env.PUBLIC_URL + "/images/portrait.jpeg"} id="selfPortrait" />
                     </div>
                     <div class="col-md-8 my-auto" id="info">
                         <p>Looking for a quote?<br />
