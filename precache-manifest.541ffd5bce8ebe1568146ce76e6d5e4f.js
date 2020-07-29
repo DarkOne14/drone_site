@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f3a5514e97c77beb15db0d00b5a2d257",
+    "revision": "c129f51f1c77eca42e5499c51cca8cfa",
     "url": "/drone_site/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/drone_site/static/css/2.f936e03a.chunk.css"
   },
   {
-    "revision": "784857f233075118db23",
+    "revision": "05f0032fd89b58474aed",
     "url": "/drone_site/static/css/main.63af8fe2.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/drone_site/static/js/2.fb82cc73.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "784857f233075118db23",
-    "url": "/drone_site/static/js/main.b723c4fe.chunk.js"
+    "revision": "05f0032fd89b58474aed",
+    "url": "/drone_site/static/js/main.db219da7.chunk.js"
   },
   {
     "revision": "7d9cb649e3f7d380b251",
