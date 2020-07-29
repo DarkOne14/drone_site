@@ -41,11 +41,11 @@ function NavBar() {
         // removed sticky-top , nabbar-fixed-top
         <nav class="navbar navbar-expand-md" style={{background: (activePage == 'Gallery' ? 'rgb(0,102,204)' : 'none'), position: (activePage == 'Gallery' ? 'relative' : 'absolute')}}>
             <a class="navbar-brand">
-                <Link to="/"><img src={process.env.PUBLIC_URL + "/HigherResolutionLogo.png"} id="logo" onClick={() => {setActivePage('Home'); pageActions.setBg('none'); pageActions.setPos('absolute');} }></img></Link>
+                <Link to="/home"><img src={process.env.PUBLIC_URL + "/HigherResolutionLogo.png"} id="logo" onClick={() => {setActivePage('Home'); pageActions.setBg('none'); pageActions.setPos('absolute');} }></img></Link>
             </a>
             
             <ul class="navbar-nav ml-auto">
-                <li id="home" className={"nav-item " + (activePage == 'Home' ? 'active' : '')}><a onClick={() => {setActivePage('Home'); pageActions.setBg('none'); pageActions.setPos('absolute');} }><Link to="/">Home</Link></a></li>
+                <li id="home" className={"nav-item " + (activePage == 'Home' ? 'active' : '')}><a onClick={() => {setActivePage('Home'); pageActions.setBg('none'); pageActions.setPos('absolute');} }><Link to="/home">Home</Link></a></li>
                 <li class={"nav-item dropdown " }>
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle" id={(activePage == 'Gallery' ? 'active-toggle' : '')}>Gallery<b class="caret"></b></a>
                     <ul class="dropdown-content">
