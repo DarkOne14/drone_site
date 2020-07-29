@@ -15,13 +15,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Redirect from="/" to ="/home" />
-      <Route exact path="/home" component={Home} />
-      <Route exact path="/gallery" component={Gallery} />
-      <Route exact path="/what-we-do" component={WhatWeDo} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/photos" component={ImageGallery} />
-      <Route exact path="/videos" component={VideoGallery} />
+      <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+      <Route exact path={process.env.PUBLIC_URL + "/gallery"} component={Gallery} />
+      <Route exact path={process.env.PUBLIC_URL + "/what-we-do"} component={WhatWeDo} />
+      <Route exact path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
+      <Route exact path={process.env.PUBLIC_URL + "/photos"} component={ImageGallery} />
+      <Route exact path={process.env.PUBLIC_URL + "/videos"}component={VideoGallery} />
       <Footer />
     </div>
   );
