@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc2f977fe2466117298f6d5ae69f7a76",
+    "revision": "e2b63139740d3bda1ad53cae0922b4e6",
     "url": "/drone_site/index.html"
   },
   {
