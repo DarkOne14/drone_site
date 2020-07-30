@@ -14,20 +14,20 @@ import {BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-     
-      <Router basename={process.env.PUBLIC_URL}>
-        <Navbar />
-        <Route exact path="/" component={Home} />
-        {/* <Route exact path={'gallery'} component={Gallery} /> */}
-        <Route exact path="/what-we-do" component={WhatWeDo} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/photos" component={ImageGallery} />
-        <Route exact path="/videos" component={VideoGallery} />
-        <Footer />
-      </Router>
-      
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <div className="App">
+
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          {/* <Route exact path={'gallery'} component={Gallery} /> */}
+          <Route path="/what-we-do" component={WhatWeDo} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/photos" component={ImageGallery} />
+          <Route path="/videos" component={VideoGallery} />
+          <Footer />
+        
+      </div>
+    </Router>
   );
 }
 

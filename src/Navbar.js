@@ -35,6 +35,7 @@ function NavBar() {
     // [value] means this will only run when value re-renders
     useEffect(() => {
         window.localStorage.setItem('activePage', activePage);
+        console.log(process.env.PUBLIC_URL);
     },[activePage])
 
     return (
