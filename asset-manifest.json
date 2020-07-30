@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.63af8fe2.chunk.css",
-    "main.js": "/static/js/main.e31c3d36.chunk.js",
-    "main.js.map": "/static/js/main.e31c3d36.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d1594a52.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d1594a52.js.map",
-    "static/css/2.f936e03a.chunk.css": "/static/css/2.f936e03a.chunk.css",
-    "static/js/2.48f44f32.chunk.js": "/static/js/2.48f44f32.chunk.js",
-    "static/js/2.48f44f32.chunk.js.map": "/static/js/2.48f44f32.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6c1d60c4c4808b65f0f34a521ac7c866.js": "/precache-manifest.6c1d60c4c4808b65f0f34a521ac7c866.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.f936e03a.chunk.css.map": "/static/css/2.f936e03a.chunk.css.map",
-    "static/css/main.63af8fe2.chunk.css.map": "/static/css/main.63af8fe2.chunk.css.map",
-    "static/js/2.48f44f32.chunk.js.LICENSE.txt": "/static/js/2.48f44f32.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/drone_site/static/css/main.63af8fe2.chunk.css",
+    "main.js": "/drone_site/static/js/main.2e0c359f.chunk.js",
+    "main.js.map": "/drone_site/static/js/main.2e0c359f.chunk.js.map",
+    "runtime-main.js": "/drone_site/static/js/runtime-main.acb6eca0.js",
+    "runtime-main.js.map": "/drone_site/static/js/runtime-main.acb6eca0.js.map",
+    "static/css/2.f936e03a.chunk.css": "/drone_site/static/css/2.f936e03a.chunk.css",
+    "static/js/2.48f44f32.chunk.js": "/drone_site/static/js/2.48f44f32.chunk.js",
+    "static/js/2.48f44f32.chunk.js.map": "/drone_site/static/js/2.48f44f32.chunk.js.map",
+    "index.html": "/drone_site/index.html",
+    "precache-manifest.102757d53eee409c6cf3f54c09b213e0.js": "/drone_site/precache-manifest.102757d53eee409c6cf3f54c09b213e0.js",
+    "service-worker.js": "/drone_site/service-worker.js",
+    "static/css/2.f936e03a.chunk.css.map": "/drone_site/static/css/2.f936e03a.chunk.css.map",
+    "static/css/main.63af8fe2.chunk.css.map": "/drone_site/static/css/main.63af8fe2.chunk.css.map",
+    "static/js/2.48f44f32.chunk.js.LICENSE.txt": "/drone_site/static/js/2.48f44f32.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/drone_site/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d1594a52.js",
+    "static/js/runtime-main.acb6eca0.js",
     "static/css/2.f936e03a.chunk.css",
     "static/js/2.48f44f32.chunk.js",
     "static/css/main.63af8fe2.chunk.css",
-    "static/js/main.e31c3d36.chunk.js"
+    "static/js/main.2e0c359f.chunk.js"
   ]
 }
