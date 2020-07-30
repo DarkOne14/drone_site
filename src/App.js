@@ -13,7 +13,6 @@ import {Route, Link, Redirect} from 'react-router-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
-  console.log(process.env.PUBLIC_URL);
   return (
     <div className="App">
      
@@ -21,10 +20,10 @@ function App() {
         <Navbar />
         <Route exact path="/" component={Home} />
         {/* <Route exact path={'gallery'} component={Gallery} /> */}
-        <Route path="/what-we-do" component={WhatWeDo} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/photos" component={ImageGallery} />
-        <Route path="/videos" component={VideoGallery} />
+        <Route exact path="/what-we-do" component={WhatWeDo} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/photos" component={ImageGallery} />
+        <Route exact path="/videos" component={VideoGallery} />
         <Footer />
       </Router>
       
