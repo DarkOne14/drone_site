@@ -19,24 +19,30 @@
     transform: scale(1.2);
 }
 
-
-@media screen and (min-width: 1601px) {
+/* mobile phones, portrait or landscape */
+@media screen and (max-width: 640px) {
     #photoText {
-        font-size: 80px;
+        font-size: 40px;
     }
 }
 
-@media screen and (max-width: 1600px) and (min-width: 801px) {
+/* tablets, portrait or landscape */
+@media screen and (min-width: 640px) and (max-width: 1024px) {
     #photoText {
         font-size: 50px;
     }
 }
 
-@media screen and (max-width: 800px) {
+/* desktops */
+@media screen and (min-width: 1024px) {
     #photoText {
-        font-size: 40px;
+        font-size: 80px;
     }
 }
+
+
+
+
 
 #photoText {
     position: absolute;

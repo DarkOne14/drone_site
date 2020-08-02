@@ -1,35 +1,32 @@
 .navbar {
-    /* flex-direction: row;  not using */
-    /* background-color: rgb(91, 185, 3); */
-    /* background: none; */
-    /* position: absolute; */
-    position: absolute;
-    /* flex-direction: row; */
+    position: absolute; 
     top: 0;
     z-index: 5;
-    min-height: 7vh;
-    /* white-space: nowrap; */
+    min-height: 7vh; 
     width: 100%;
-    /* min-width: 600px; */
+    /* flex-wrap: nowrap; */
+    
 }
 
 
 
 #logo {
-    /* max-height: 35%; */
-    max-width: 35%;
+    /* max-width: 35%; */
+    height: 60px;
     float: left;
-    padding: 0px;
-    margin: 0px;
+    /* padding: 0px;
+    margin: 0px; */
 }
 
+/* #logoContainer {
+    max-width: 35%;
+} */
 
 .navbar-nav {
-    flex-direction: row;
-    float: right;
-    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
-    /* font-size: 21px; */
+    flex-direction: row; 
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';  
     color: black;
+    float: right;
     /* display: inline-block; */
 }
 
@@ -46,13 +43,8 @@
 }
 
 .nav-item {
-    /* display: inline-block; */
-    /* background-color: black; */
     margin: 10px;
-    /* padding-left: 2px; */
-    /* text-align: center; */
-    /* display: inline-block;
-    vertical-align: middle; */
+    /* float: right;    */
 }
 
 .nav-item a {
@@ -92,6 +84,11 @@
     display: block;
     /* left: 0; */
 }
+/* 
+.dropdown-content>a:active {
+    visibility: hidden;
+    opacity: 0;
+} */
 
   
 .dropdown-content a:hover {

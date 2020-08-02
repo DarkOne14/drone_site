@@ -25,6 +25,8 @@ const imageSources = [
     '/images/AA3.jpg',
 ];
 
+// NOTE: mobile images should be compressed bc they don't need to that good.
+
 const options = {
     settings: {
         lightboxTransitionSpeed: 0.2,

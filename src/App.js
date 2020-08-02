@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
-import Gallery from './Gallery';
 import Contact from './Contact';
 import WhatWeDo from './WhatWeDo';
 import Navbar from './Navbar';
@@ -19,7 +18,6 @@ function App() {
 
           <Navbar />
           <Route exact path="/" component={Home} />
-          {/* <Route exact path={'gallery'} component={Gallery} /> */}
           <Route path="/what-we-do" component={WhatWeDo} />
           <Route path="/contact" component={Contact} />
           <Route path="/photos" component={ImageGallery} />
