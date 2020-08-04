@@ -19,12 +19,7 @@
 
 /* mobile phones, portrait or landscape */
 @media screen and (max-width: 640px) {
-    #bannerText {
-        font-size: 5vw;
-    }
-    #smallerText {
-        font-size: 3vw;
-    }
+    
     .imageTextBox img {
         height: 40vh;
     }
@@ -32,31 +27,20 @@
 
 /* tablets, portrait or landscape */
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-    #bannerText {
-        font-size: 5vw;
-    }
-    #smallerText {
-        font-size: 3vw;
-    }
+    
+    
 }
 
 /* desktops */
 @media screen and (min-width: 1024px) {
-    #bannerText {
-        font-size: 80px;
-    }
-    #smallerText {
-        font-size: 40px;
-    }
-    .middle {
-        margin: auto;
-        width: 50%;
-    }
+    
+    
 }
 
 
 #smallerText {
     position: absolute;
+    font-size: 3vw;
     width: 100%;
     top: 32%;
     left: 0;
@@ -69,6 +53,7 @@
 
 #bannerText {
     position: absolute;
+    font-size: 5vw;
     width: 60%;
     top: 40%;
     left: 0;
@@ -93,6 +78,10 @@ h2 span {
 
 .section {
     padding-top: 17px;
+}
+.middle {
+    margin: auto;
+    width: 70%;
 }
 
 .largeText {

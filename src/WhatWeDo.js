@@ -6,7 +6,7 @@ function WhatWeDo() {
     return(
         <div>
             <div class="topPhoto">
-                <img src={process.env.PUBLIC_URL + "/images/boat1.jpg"} />
+                <img id="what" src={process.env.PUBLIC_URL + "/images/boat1.jpg"} />
                 <div id="photoText">What We Do</div>
             </div>
             <div class="container">

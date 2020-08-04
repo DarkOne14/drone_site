@@ -1,7 +1,7 @@
 .topPhoto {
     position: relative;
-    max-height: 40vh;
-    min-height: 450px;
+    /* max-height: 50vh; */
+    /* min-height: 450px; */
     overflow: hidden;
     user-select: none;
 
@@ -9,20 +9,35 @@
 
 .topPhoto img {
     width: 100%;
-    min-height: 450px;
+    /* min-height: 450px; */
+    /* height: 100%; */
+    /* height: 40vh; */
     position: relative;
     transition: transform 1.5s ease;
     /* transform: translateY(-30%); */
 }
 
-.topPhoto:hover img {
-    transform: scale(1.2);
-}
+
 
 /* mobile phones, portrait or landscape */
 @media screen and (max-width: 640px) {
     #photoText {
         font-size: 40px;
+    }
+    .topPhoto {
+        height: 40vh;
+    }
+    /* for the image on whatwedo page */
+    #what {
+        height: 100%;
+        width: 200%;
+        left: -80px;
+    }
+    /* for the image on contact us page */
+    #stadium {
+        height: 100%;
+        width: 125%;
+        left: -40px;
     }
 }
 
@@ -31,12 +46,19 @@
     #photoText {
         font-size: 50px;
     }
+    
 }
 
 /* desktops */
 @media screen and (min-width: 1024px) {
     #photoText {
         font-size: 80px;
+    }
+    .topPhoto {
+       height: 50vh;
+    }
+    .topPhoto:hover img {
+        transform: scale(1.2);
     }
 }
 

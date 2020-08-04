@@ -7,7 +7,7 @@ function Contact(){
     return(
         <div>
             <div class="topPhoto">
-                <img src={process.env.PUBLIC_URL + "/images/AA7.jpg"} />
+                <img id="stadium" src={process.env.PUBLIC_URL + "/images/AA7.jpg"} />
                 <div id="photoText">Contact Us</div>
             </div>
             <div class="container" id="contact-container">
