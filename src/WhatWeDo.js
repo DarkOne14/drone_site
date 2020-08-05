@@ -25,33 +25,31 @@ function WhatWeDo() {
                 <div class="services">
                     <h1>Services</h1>
                     <br/>
-                        <div class="row justify-content-sm-center">      
-                                <div class="col-sm-3">
-                                        <ul>
-                                            <li>Weddings</li>
-                                            <li>Boats</li>
-                                            <li>Landscapes</li>
-                                            <li>Sporting Events</li>
-                                            <li>Resorts & Hotels</li>
-                                            <li>Concerts</li>
-                                            <li>Campus Coverage</li>
-                                            <li>Personal Projects</li>
-                                            <li>Large Groups</li>
-                                        </ul>        
-                                </div>
-                                <div class="col-sm-3">
-                                    <ul>
-                                        <li>Golf Courses</li>
-                                        <li>Real Estate Imaging</li>
-                                        <li>Car Dealerships</li>
-                                        <li>Surveying</li>
-                                        <li>Construction Site Inspection</li>
-                                        <li>Parties</li>
-                                        <li>Damage Claim Assistance</li>
-                                        <li>Nurseries</li>
-                                        <li>AND MORE</li>
-                                    </ul>
-                                </div>                         
+                        <div class="row justify-content-sm-center">
+                            <div class="col-sm-12">
+                                <ul style={{columnCount:2}}>
+                                    <li>Weddings</li>
+                                    <li>Boats</li>
+                                    <li>Landscapes</li>
+                                    <li>Sporting Events</li>
+                                    <li>Resorts & Hotels</li>
+                                    <li>Concerts</li>
+                                    <li>Campus Coverage</li>
+                                    <li>Personal Projects</li>
+                                    <li>Large Groups</li>
+                                    <li>Golf Courses</li>
+                                    <li>Real Estate Imaging</li>
+                                    <li>Car Dealerships</li>
+                                    <li>Surveying</li>
+                                    <li>Construction Site Inspection</li>
+                                    <li>Parties</li>
+                                    <li>Damage Claim Assistance</li>
+                                    <li>Nurseries</li>
+                                    <li>AND MORE</li>
+                                </ul>
+                            </div>      
+                            
+                                                      
                             <i>Have an idea you don't see on here? Not a problem. Just reach out and tell us about it.</i>
                         </div>
                 </div>

@@ -104,6 +104,12 @@
     /* transition-delay: 0s, 0s, 0.3s; */
 }
 
+/* .dropdown:not:hover .dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    /* transform: translateY(0%); */
+    /* transition-delay: 0s, 0s, 0.3s; */ 
+
 .active a{
     color: rgb(255, 203, 5);
     /* font-weight: bold; */

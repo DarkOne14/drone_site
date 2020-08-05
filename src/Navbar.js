@@ -63,7 +63,7 @@ function NavBar() {
                         <li id="home" className={"nav-item " + (activePage == 'Home' ? 'active' : '')}><a onClick={() => {setActivePage('Home'); pageActions.setBg('none'); pageActions.setPos('absolute');} }><Link to="/">Home</Link></a></li>
                         <li class="nav-item dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle" id={(activePage == 'Gallery' ? 'active-toggle' : '')}>Gallery<b class="caret"></b></a>
-                            <ul class="dropdown-content">
+                            <ul class="dropdown-content" >
                                 <a id="photos" href="#" onClick={() => {setActivePage('Gallery'); pageActions.setBg('rgb(0,102,204'); pageActions.setPos('relative') } }><Link to="/photos">Photos</Link></a>
                                 <a id="videos" href="#" onClick={() => {setActivePage('Gallery'); pageActions.setBg('rgb(0,102,204'); pageActions.setPos('relative') } }><Link to="/videos">Videos</Link></a>
                             </ul>

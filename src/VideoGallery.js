@@ -17,7 +17,7 @@ function generateVGallery() {
     let content = [];
     for (var i = 0; i < videoSources.length; i++) {
         content.push(
-            <div class="col-md-4">
+            <div class="col-md-4 videoColumn">
                 <iframe src={videoSources[i]} allowFullScreen frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" />
             </div>
