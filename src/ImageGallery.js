@@ -69,21 +69,23 @@ function ImageGallery() {
     return (
         <div>
             <SimpleReactLightbox>
-                <div class="container">
+                {/* <div class="container">
                     <div class="row">       
                         <div class="col-sm-6 my-auto" id="cam">
                             12MP Camera
                         </div>
-                        {/* <div class="col-md-4 my-autos" id="des">
+                        <div class="col-md-4 my-autos" id="des">
                             Our company works to produce professional level aerial imaging,
                                 which is why our drones are equipped with a 12MP
                                 camera and 4K video capabilities to highlight in every pixel.
-                        </div> */}
+                        </div>
                         <div class="col-sm-6 my-auto" id="vid">
                             4K Video
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <br />
+                <br />
                 <SRLWrapper options={options}>
                     {generateIGallery()}
                 </SRLWrapper>

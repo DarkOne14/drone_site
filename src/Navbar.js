@@ -39,6 +39,7 @@ function NavBar() {
     useEffect(() => {
         window.localStorage.setItem('activePage', activePage);
         console.log(process.env.PUBLIC_URL);
+        console.log("The current page is " + activePage);
     },[activePage]);
 
     function toggleNavbar() {
